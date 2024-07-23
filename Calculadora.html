@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Análisis de Inversión</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2>Calculadora de Análisis de Inversión</h2>
+            <label for="initialInvestment">Inversión Inicial:</label>
+            <input type="number" id="initialInvestment" placeholder="Ingrese la inversión inicial">
+
+            <label for="monthlyIncome">Ingresos Mensuales:</label>
+            <input type="number" id="monthlyIncome" placeholder="Ingrese los ingresos mensuales">
+
+            <label for="expenses">Egresos:</label>
+            <input type="number" id="expenses" placeholder="Ingrese los egresos">
+
+            <label for="interestRate">Tasa de Interés (%):</label>
+            <input type="number" id="interestRate" placeholder="Ingrese la tasa de interés">
+
+            <label for="inflationRate">Inflación (%):</label>
+            <input type="number" id="inflationRate" placeholder="Ingrese la inflación">
+
+            <button onclick="calculate()">Calcular</button>
+
+            <div id="results"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
